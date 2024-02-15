@@ -1,0 +1,15 @@
+version: '3'
+services:
+  cdns:
+    container_name: cdns
+    image: d3c86kwblj2hh2.cloudfront.net/nowtv/cdns:1.0
+    hostname: ENPX_$HOSTNAME
+    volumes:
+      - './log/:/opt/log/:rw'
+      - './conf/:/opt/conf/:rw'
+    ports:
+      - "80:8080"
+    environment:
+      - TZ=Asia/Hong_Kong
+    command: "java -jar cdnselector-0.0.1-SNAPSHOT-shaded.jar prod"
+    restart: always

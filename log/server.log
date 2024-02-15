@@ -1,0 +1,19 @@
+2022-10-18 16:28:12,869 INFO  app.main.MainApp: - Running Env: pp
+2022-10-18 16:28:12,892 INFO  io.javalin.Javalin: - Starting Javalin ...
+2022-10-18 16:28:12,951 INFO  org.eclipse.jetty.server.Server: - jetty-11.0.12; built: 2022-09-14T02:38:00.723Z; git: d5b8c29485f5f56a14be5f20c2ccce81b93c5555; jvm 17+35-LTS
+2022-10-18 16:28:12,986 INFO  org.eclipse.jetty.server.session.DefaultSessionIdManager: - Session workerName=node0
+2022-10-18 16:28:12,991 INFO  org.eclipse.jetty.server.handler.ContextHandler: - Started i.j.j.@37bd68c3{/,null,AVAILABLE}
+2022-10-18 16:28:13,001 INFO  org.eclipse.jetty.server.AbstractConnector: - Started ServerConnector@55dfebeb{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2022-10-18 16:28:13,002 INFO  org.eclipse.jetty.server.Server: - Started Server@6c45ee6e{STARTING}[11.0.12,sto=0] @469ms
+2022-10-18 16:28:13,002 INFO  io.javalin.Javalin: - 
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+2022-10-18 16:28:13,004 INFO  io.javalin.Javalin: - Listening on http://localhost:8080/
+2022-10-18 16:28:13,010 INFO  io.javalin.Javalin: - You are running Javalin 5.1.1 (released October 17, 2022).
+2022-10-18 16:28:13,011 INFO  io.javalin.Javalin: - Javalin started in 120ms \o/

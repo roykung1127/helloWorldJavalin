@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+    <Appenders>
+        <!-- Async Loggers will auto-flush in batches, so switch off immediateFlush.
+        <RollingRandomAccessFile name="logfile" fileName="logs/system.log" bufferSize="2621440" immediateFlush="false" filePattern="logs/$${date:yyyy-MM}/system.log-%d{MM-dd-yyyy}-%i.log.gz">
+          <PatternLayout>
+            <Pattern>%d{UTF-8} %-5p %c:%L - %m%n</Pattern>
+          </PatternLayout>
+          <Policies>
+                    <OnStartupTriggeringPolicy />
+                    <SizeBasedTriggeringPolicy size="100MB" />
+                    <TimeBasedTriggeringPolicy />
+           </Policies>
+        </RollingRandomAccessFile>
+        -->
+
+        <!-- For Development Console output use only-->
+
+
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{UTF-8} %-5p %c:%L - %m%n" />
+        </Console>
+        <!--
+         <Async name="Async_logfile">
+               <AppenderRef ref="logfile"/>
+               <LinkedTransferQueue />
+         </Async>
+         -->
+
+    </Appenders>
+    <Loggers>
+        <Root level="INFO" includeLocation="false">
+            <!--    <AppenderRef ref="Async_logfile" level="INFO"/> -->
+            <AppenderRef ref="STDOUT" level="INFO"/>
+        </Root>
+    </Loggers>
+</Configuration>

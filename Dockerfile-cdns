@@ -1,0 +1,8 @@
+#
+# Build Docker Image
+#
+FROM amazoncorretto:17-alpine
+WORKDIR /opt
+COPY target/cdnselector-0.0.1-SNAPSHOT-shaded.jar ./cdnselector-0.0.1-SNAPSHOT-shaded.jar
+EXPOSE 8080
+CMD /usr/bin/java -jar cdnselector-0.0.1-SNAPSHOT-shaded.jar prod
